@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Advanced News Page
+{% endblock title %}
+
+{% block content %}
+  {{block.super}}
+  <div class="container mt-5">
+    <h1>News</h1>
+
+    <table class="table table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Subject</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for date, subject in news_items %}
+        <tr class="{% cycle 'table-primary' 'table-secondary' %}">
+          <td>{{ date|date:"F j, Y"}}</td>
+          <td>{{ subject }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+          <td colspan="2">No news available</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock content %}
