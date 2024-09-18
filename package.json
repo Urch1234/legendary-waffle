@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@hint/hint-axe": "^4.4.21",
+    "@hint/hint-https-only": "^2.4.27",
+    "@hint/hint-performance-budget": "^2.4.27",
+    "hint": "^7.1.13"
+  }
+}

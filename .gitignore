@@ -1,0 +1,86 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# macOS-specific files
+.DS_Store
+
+# Virtual environments created by pipenv, virtualenv, etc.
+*.venv/
+env/
+venv/
+
+# pipenv specific files
+Pipfile
+Pipfile.lock
+
+# Python environment configuration
+*.virtualenv/
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+db.sqlite3
+*.sqlite3
+
+# Local environment files (sensitive files containing secrets or configs)
+.env
+*.env
+.env.*
+
+# Media and static files (optional, depending on your project setup)
+media/
+static/
+staticfiles/
+static_root/
+
+# IDE/Editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Backup and temporary files
+*.bak
+*.swp
+*.swo
+*.orig
+
+# Celery stuff
+celerybeat-schedule
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# pytest
+.cache/
+
+# Migrations (optional, only exclude if you are sure you don't want to track them)
+migrations/
+
+# Node.js files (if using any JS dependencies or build tools)
+node_modules/
+
+# Jupyter Notebook checkpoints (if using notebooks)
+.ipynb_checkpoints/
+
+# Docker specific files
+.dockerignore
+
+# Backup files from IDEs
+*.bak
+*.swp
+*.swo
+
+# Hint configuration file
+.hintrc
